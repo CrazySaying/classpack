@@ -242,7 +242,25 @@
         },
         "damage": {
           "onSave": "half",
-          "parts": [],
+          "parts": [
+            {
+              "number": 4,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
           "critical": {
             "allow": false
           }

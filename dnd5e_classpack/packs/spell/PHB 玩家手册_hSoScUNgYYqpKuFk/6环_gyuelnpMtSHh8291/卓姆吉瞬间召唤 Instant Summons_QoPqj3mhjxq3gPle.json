@@ -135,7 +135,7 @@
     },
     "duration": {
       "value": "",
-      "units": "perm"
+      "units": "disp"
     },
     "target": {
       "affects": {

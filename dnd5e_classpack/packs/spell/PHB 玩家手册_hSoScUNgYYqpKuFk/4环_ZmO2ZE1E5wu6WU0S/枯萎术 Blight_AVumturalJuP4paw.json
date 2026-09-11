@@ -157,7 +157,7 @@
           "parts": [
             {
               "number": 8,
-              "denomination": 12,
+              "denomination": 8,
               "bonus": "",
               "types": [
                 "necrotic"

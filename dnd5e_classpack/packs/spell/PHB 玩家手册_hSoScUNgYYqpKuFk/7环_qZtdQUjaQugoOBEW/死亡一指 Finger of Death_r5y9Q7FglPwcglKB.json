@@ -150,9 +150,9 @@
           "onSave": "half",
           "parts": [
             {
-              "number": 14,
+              "number": 7,
               "denomination": 8,
-              "bonus": "60",
+              "bonus": "30",
               "types": [
                 "necrotic"
               ],

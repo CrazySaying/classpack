@@ -345,20 +345,17 @@
     },
     "target": {
       "affects": {
-        "choice": false,
-        "type": ""
+        "choice": false
       },
       "template": {
         "units": "ft",
         "type": "cone",
         "size": "60",
-        "contiguous": false,
-        "count": ""
+        "contiguous": false
       }
     },
     "range": {
-      "units": "self",
-      "special": ""
+      "units": "self"
     },
     "uses": {
       "max": "",
@@ -524,15 +521,28 @@
           "max": ""
         },
         "damage": {
-          "parts": [],
-          "critical": {
-            "allow": false
-          },
-          "onSave": "half"
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 10,
+              "denomination": 6,
+              "bonus": "",
+              "types": [],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
         },
         "save": {
           "ability": [
-            "wis"
+            "dex"
           ],
           "dc": {
             "calculation": "spellcasting",

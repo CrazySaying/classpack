@@ -172,23 +172,25 @@
           }
         },
         "damage": {
-          "critical": {},
+          "critical": {
+            "bonus": ""
+          },
           "includeBase": true,
           "parts": [
             {
-              "number": 1,
-              "denomination": 8,
-              "bonus": "@mod",
+              "number": null,
+              "denomination": null,
+              "bonus": "",
               "types": [
                 "force"
               ],
               "custom": {
-                "enabled": false,
-                "formula": ""
+                "enabled": true,
+                "formula": "(floor(@item.level / 2))d8 + @mod"
               },
               "scaling": {
-                "mode": "whole",
-                "number": 1,
+                "mode": "",
+                "number": null,
                 "formula": ""
               }
             }

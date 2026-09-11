@@ -297,19 +297,19 @@
           "includeBase": true,
           "parts": [
             {
-              "custom": {
-                "enabled": false,
-                "formula": ""
-              },
-              "number": 3,
-              "denomination": 6,
+              "number": null,
+              "denomination": null,
               "bonus": "",
               "types": [
                 "fire"
               ],
+              "custom": {
+                "enabled": true,
+                "formula": "(floor(2 + @item.level / 2))d6"
+              },
               "scaling": {
-                "mode": "whole",
-                "number": 1,
+                "mode": "",
+                "number": null,
                 "formula": ""
               }
             }

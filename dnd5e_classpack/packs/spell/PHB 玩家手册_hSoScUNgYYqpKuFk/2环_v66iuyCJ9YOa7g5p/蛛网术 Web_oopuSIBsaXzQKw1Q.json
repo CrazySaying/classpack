@@ -214,21 +214,21 @@
         },
         "otherActivityId": ""
       },
-      "Xallbasi9GbzqzB5": {
-        "type": "damage",
-        "_id": "Xallbasi9GbzqzB5",
-        "sort": 0,
+      "dnd5eactivity300": {
+        "_id": "dnd5eactivity300",
+        "type": "utility",
         "activation": {
           "type": "action",
           "value": null,
           "override": false
         },
         "consumption": {
+          "targets": [],
           "scaling": {
-            "allowed": false
+            "allowed": false,
+            "max": ""
           },
-          "spellSlot": true,
-          "targets": []
+          "spellSlot": true
         },
         "description": {
           "chatFlavor": ""
@@ -243,6 +243,7 @@
           "override": false
         },
         "target": {
+          "prompt": true,
           "template": {
             "contiguous": false,
             "units": "ft"
@@ -250,50 +251,19 @@
           "affects": {
             "choice": false
           },
-          "override": false,
-          "prompt": true
+          "override": false
+        },
+        "roll": {
+          "formula": "2d4[fire]",
+          "name": "",
+          "prompt": false,
+          "visible": false
         },
         "uses": {
           "spent": 0,
-          "recovery": [],
-          "max": ""
+          "recovery": []
         },
-        "damage": {
-          "critical": {
-            "allow": false
-          },
-          "parts": [
-            {
-              "custom": {
-                "enabled": false,
-                "formula": ""
-              },
-              "number": 2,
-              "denomination": 4,
-              "bonus": "",
-              "types": [
-                "fire"
-              ],
-              "scaling": {
-                "mode": "",
-                "number": 1
-              }
-            }
-          ]
-        },
-        "useConditionText": "",
-        "useConditionReason": "",
-        "effectConditionText": "",
-        "macroData": {
-          "name": "",
-          "command": ""
-        },
-        "ignoreTraits": {
-          "idi": false,
-          "idr": false,
-          "idv": false,
-          "ida": false
-        },
+        "sort": 0,
         "midiProperties": {
           "ignoreTraits": [],
           "triggeredActivityId": "none",
@@ -313,13 +283,10 @@
           "toggleEffect": false,
           "ignoreFullCover": false
         },
-        "isOverTimeFlag": false,
-        "overTimeProperties": {
-          "saveRemoves": true,
-          "preRemoveConditionText": "",
-          "postRemoveConditionText": ""
-        },
-        "name": "点燃蛛网"
+        "macroData": {
+          "name": "",
+          "command": ""
+        }
       }
     },
     "identifier": "web"

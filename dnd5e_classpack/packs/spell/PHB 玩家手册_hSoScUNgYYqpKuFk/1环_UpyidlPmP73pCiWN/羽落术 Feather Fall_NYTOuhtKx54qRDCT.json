@@ -90,7 +90,6 @@
     },
     "properties": [
       "vocal",
-      "somatic",
       "mgc",
       "material"
     ],

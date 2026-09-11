@@ -58,7 +58,7 @@
     },
     "duration": {
       "value": "",
-      "units": "perm"
+      "units": "dstr"
     },
     "target": {
       "affects": {
