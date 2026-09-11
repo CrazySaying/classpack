@@ -36,15 +36,25 @@
           "override": false
         },
         "consumption": {
-          "targets": [],
+          "targets": [
+            {
+              "type": "spellSlots",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "level",
+                "formula": ""
+              }
+            }
+          ],
           "scaling": {
             "allowed": false,
             "max": ""
           },
-          "spellSlot": true
+          "spellSlot": false
         },
         "description": {
-          "chatFlavor": ""
+          "chatFlavor": "每消耗 1 环法术位，伤害减少 5 点"
         },
         "duration": {
           "concentration": false,

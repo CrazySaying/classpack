@@ -16,7 +16,7 @@
     "cover": null,
     "crewed": false,
     "uses": {
-      "max": "1",
+      "max": "@prof",
       "recovery": [
         {
           "period": "lr",
@@ -63,11 +63,16 @@
         },
         "duration": {
           "concentration": false,
-          "units": "",
+          "value": 1,
+          "units": "minute",
           "special": "",
           "override": false
         },
-        "effects": [],
+        "effects": [
+          {
+            "_id": "dnd5efixblades01"
+          }
+        ],
         "range": {
           "units": "",
           "special": "",
@@ -103,7 +108,13 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "appliedEffects": [
+          "dnd5efixblades01"
+        ],
+        "midiProperties": {
+          "toggleEffect": true
+        }
       }
     },
     "identifier": "-bladesong-tce",
@@ -115,7 +126,88 @@
     },
     "properties": []
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "dnd5efixblades01",
+      "changes": [
+        {
+          "key": "system.attributes.ac.bonus",
+          "mode": 2,
+          "value": "max(1, @abilities.int.mod)",
+          "priority": null
+        },
+        {
+          "key": "system.attributes.movement.walk",
+          "mode": 2,
+          "value": "10",
+          "priority": null
+        },
+        {
+          "key": "flags.midi-qol.advantage.skills.acr",
+          "mode": 0,
+          "value": "1",
+          "priority": null
+        },
+        {
+          "key": "system.attributes.concentration.bonuses.save",
+          "mode": 2,
+          "value": "max(1, @abilities.int.mod)",
+          "priority": null
+        },
+        {
+          "key": "flags.midi-qol.optional.胜利之歌.damage.mwak",
+          "mode": 0,
+          "value": "+max(1, @abilities.int.mod)[force]",
+          "priority": null
+        },
+        {
+          "key": "flags.midi-qol.optional.胜利之歌.label",
+          "mode": 0,
+          "value": "胜利之歌",
+          "priority": null
+        },
+        {
+          "key": "flags.midi-qol.optional.胜利之歌.count",
+          "mode": 0,
+          "value": "turn",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": 60,
+        "combat": null,
+        "rounds": 10,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Compendium.dnd5e_classpack.extra-ability.DeqMj9ld6ZN2TKgB",
+      "transfer": false,
+      "flags": {},
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "剑歌生效",
+      "img": "modules/dnd5e_classpack/Nicons/INV_Knife_1h_PanDung_C_01.png",
+      "type": "base",
+      "system": {},
+      "description": "",
+      "statuses": [],
+      "sort": 0,
+      "_key": "!items.effects!DeqMj9ld6ZN2TKgB.dnd5efixblades01"
+    }
+  ],
   "folder": "p6wdRXK9aVCbH0eK",
   "sort": 15400000,
   "flags": {

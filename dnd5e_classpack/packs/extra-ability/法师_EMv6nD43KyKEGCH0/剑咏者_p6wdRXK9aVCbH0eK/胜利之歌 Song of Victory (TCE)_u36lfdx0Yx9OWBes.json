@@ -5,7 +5,7 @@
   "img": "modules/dnd5e_classpack/Nicons/002612.png",
   "system": {
     "description": {
-      "value": "<p>14级起，在你的@UUID[Compendium.dnd5e_classpack.extra-ability.Item.DeqMj9ld6ZN2TKgB]{剑歌}激活期间，你将你的智力调整值（最低+1）加在你的近战武器伤害上。</p>",
+      "value": "<p>14级起，在你的@UUID[Compendium.dnd5e_classpack.extra-ability.Item.DeqMj9ld6ZN2TKgB]{剑歌}激活期间，你将你的智力调整值（最低+1）加在你的近战武器伤害上。</p><p>*classpack注：自动化已并入「剑歌生效」效应——剑歌持续期间，近战武器攻击命中时可选“胜利之歌”，附加 max(1, 智力调整) 点力场伤害（每回合一次）。</p>",
       "chat": ""
     },
     "source": {
