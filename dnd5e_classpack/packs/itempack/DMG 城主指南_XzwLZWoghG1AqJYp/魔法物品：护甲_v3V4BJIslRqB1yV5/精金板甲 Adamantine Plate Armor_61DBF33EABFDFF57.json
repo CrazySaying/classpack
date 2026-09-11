@@ -95,7 +95,8 @@
     },
     "container": null,
     "properties": [
-      "mgc"
+      "mgc",
+      "stealthDisadvantage"
     ],
     "activities": {},
     "identifier": "-adamantine-plate-armor",

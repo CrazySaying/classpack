@@ -99,7 +99,8 @@
     },
     "container": null,
     "properties": [
-      "mgc"
+      "mgc",
+      "stealthDisadvantage"
     ],
     "activities": {
       "dnd5eactivity000": {

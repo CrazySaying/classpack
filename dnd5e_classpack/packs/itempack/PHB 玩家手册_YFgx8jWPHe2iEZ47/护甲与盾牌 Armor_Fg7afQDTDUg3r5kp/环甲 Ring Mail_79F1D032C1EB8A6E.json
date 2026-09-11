@@ -73,7 +73,9 @@
       "baseItem": "ringmail"
     },
     "container": null,
-    "properties": [],
+    "properties": [
+      "stealthDisadvantage"
+    ],
     "activities": {},
     "identifier": "-ring-mail",
     "attuned": false

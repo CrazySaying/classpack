@@ -24,10 +24,6 @@
         {
           "period": "sr",
           "type": "recoverAll"
-        },
-        {
-          "period": "lr",
-          "type": "recoverAll"
         }
       ]
     },

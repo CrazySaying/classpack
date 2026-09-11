@@ -232,7 +232,25 @@
         },
         "damage": {
           "onSave": "half",
-          "parts": []
+          "parts": [
+            {
+              "number": 6,
+              "denomination": "10",
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
         },
         "save": {
           "ability": [

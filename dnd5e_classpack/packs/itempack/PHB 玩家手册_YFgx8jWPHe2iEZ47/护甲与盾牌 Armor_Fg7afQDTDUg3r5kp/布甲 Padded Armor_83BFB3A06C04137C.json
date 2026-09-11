@@ -90,7 +90,9 @@
       "baseItem": "padded"
     },
     "container": null,
-    "properties": [],
+    "properties": [
+      "stealthDisadvantage"
+    ],
     "activities": {},
     "identifier": "-padded-armor",
     "attuned": false

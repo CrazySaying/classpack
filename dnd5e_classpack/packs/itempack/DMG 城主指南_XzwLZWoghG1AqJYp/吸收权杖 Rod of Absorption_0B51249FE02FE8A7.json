@@ -92,7 +92,8 @@
     "container": null,
     "magicalBonus": null,
     "properties": [
-      "mgc"
+      "mgc",
+      "foc"
     ],
     "activities": {
       "dnd5eactivity000": {

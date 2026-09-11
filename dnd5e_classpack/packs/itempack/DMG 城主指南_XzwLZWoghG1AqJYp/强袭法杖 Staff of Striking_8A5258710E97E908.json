@@ -77,9 +77,8 @@
       "spent": 0,
       "recovery": [
         {
-          "period": "lr",
-          "type": "formula",
-          "formula": "1d6+4"
+          "period": "dawn",
+          "type": "recoverAll"
         }
       ]
     },
@@ -128,7 +127,8 @@
     },
     "properties": [
       "ver",
-      "mgc"
+      "mgc",
+      "foc"
     ],
     "proficient": null,
     "unidentified": {

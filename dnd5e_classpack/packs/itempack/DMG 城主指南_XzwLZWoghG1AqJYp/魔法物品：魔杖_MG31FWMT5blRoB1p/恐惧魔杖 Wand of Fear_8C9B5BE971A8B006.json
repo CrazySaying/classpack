@@ -72,9 +72,9 @@
       "spent": 0,
       "recovery": [
         {
-          "period": "lr",
+          "period": "dawn",
           "type": "formula",
-          "formula": "1d6+1"
+          "formula": "1d6 + 1"
         }
       ]
     },
@@ -102,11 +102,12 @@
     "container": null,
     "magicalBonus": null,
     "properties": [
-      "mgc"
+      "mgc",
+      "foc"
     ],
     "activities": {
-      "dnd5eactivity000": {
-        "_id": "dnd5eactivity000",
+      "dnd5eactfix127": {
+        "_id": "dnd5eactfix127",
         "type": "save",
         "activation": {
           "type": "action",
@@ -118,12 +119,8 @@
           "targets": [
             {
               "type": "itemUses",
-              "target": "",
-              "value": "1",
-              "scaling": {
-                "mode": "",
-                "formula": ""
-              }
+              "value": "2",
+              "target": ""
             }
           ],
           "scaling": {
@@ -137,15 +134,15 @@
         },
         "duration": {
           "concentration": false,
-          "value": "",
-          "units": "",
+          "value": "1",
+          "units": "minute",
           "special": "",
           "override": false
         },
         "effects": [],
         "range": {
-          "value": "60",
-          "units": "ft",
+          "value": "",
+          "units": "self",
           "special": "",
           "override": false
         },
@@ -161,108 +158,115 @@
           },
           "affects": {
             "count": "",
-            "type": "",
+            "type": "creature",
             "choice": false,
             "special": ""
           },
           "prompt": true,
           "override": false
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
         },
         "damage": {
           "onSave": "half",
           "parts": []
         },
         "save": {
-          "ability": [
-            "wis"
-          ],
+          "ability": "wis",
           "dc": {
             "calculation": "",
             "formula": "15"
           }
         },
-        "sort": 0
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "Cone of Fear",
+        "img": "",
+        "appliedEffects": [],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true
+        }
       },
-      "dnd5eactivity300": {
-        "_id": "dnd5eactivity300",
-        "type": "utility",
+      "dnd5eactfix128": {
+        "type": "cast",
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells.Item.arzCrMRgcNiQuh43",
+          "challenge": {
+            "attack": null,
+            "save": 15,
+            "override": true
+          },
+          "level": "1",
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "ability": ""
+        },
+        "_id": "dnd5eactfix128",
         "activation": {
           "type": "action",
-          "value": 1,
-          "condition": "",
+          "value": null,
           "override": false
         },
         "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
           "targets": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1",
-              "scaling": {
-                "mode": "",
-                "formula": ""
-              }
+              "type": "activityUses",
+              "value": "1"
             }
-          ],
-          "scaling": {
-            "allowed": false,
-            "max": ""
-          },
-          "spellSlot": true
+          ]
         },
         "description": {
           "chatFlavor": ""
         },
         "duration": {
+          "units": "inst",
           "concentration": false,
-          "value": "",
-          "units": "",
-          "special": "",
           "override": false
         },
-        "effects": [],
         "range": {
-          "value": "60",
-          "units": "ft",
-          "special": "",
           "override": false
         },
         "target": {
           "template": {
-            "count": "",
             "contiguous": false,
-            "type": "cone",
-            "size": "60",
-            "width": "",
-            "height": "",
             "units": "ft"
           },
           "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
+            "choice": false
           },
-          "prompt": true,
-          "override": false
+          "override": false,
+          "prompt": true
         },
         "uses": {
           "spent": 0,
-          "max": "",
-          "recovery": []
+          "recovery": [],
+          "max": ""
         },
-        "roll": {
-          "formula": "1d6 +1",
-          "name": "",
-          "prompt": false,
-          "visible": false
-        },
-        "sort": 0
+        "name": "",
+        "img": "",
+        "visibility": {
+          "requireIdentification": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
       }
     },
     "identifier": "-wand-of-fear",

@@ -73,7 +73,9 @@
       "baseItem": "chainmail"
     },
     "container": null,
-    "properties": [],
+    "properties": [
+      "stealthDisadvantage"
+    ],
     "activities": {},
     "identifier": "-chain-mail",
     "attuned": false

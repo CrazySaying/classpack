@@ -154,9 +154,8 @@
       "spent": 0,
       "recovery": [
         {
-          "period": "dawn",
-          "type": "formula",
-          "formula": "1d3"
+          "period": "lr",
+          "type": "recoverAll"
         }
       ]
     },

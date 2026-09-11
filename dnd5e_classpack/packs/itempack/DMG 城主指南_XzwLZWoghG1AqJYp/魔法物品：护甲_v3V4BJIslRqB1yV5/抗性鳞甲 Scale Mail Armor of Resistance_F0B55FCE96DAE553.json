@@ -74,7 +74,8 @@
     },
     "container": null,
     "properties": [
-      "mgc"
+      "mgc",
+      "stealthDisadvantage"
     ],
     "activities": {},
     "identifier": "-scale-mail-armor-of-resistance",

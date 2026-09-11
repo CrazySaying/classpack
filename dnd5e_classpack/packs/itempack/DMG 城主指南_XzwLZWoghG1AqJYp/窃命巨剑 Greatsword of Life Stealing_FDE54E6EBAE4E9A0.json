@@ -191,7 +191,7 @@
       },
       "dnd5eactivity300": {
         "_id": "dnd5eactivity300",
-        "type": "utility",
+        "type": "damage",
         "activation": {
           "type": "action",
           "value": 1,
@@ -252,7 +252,28 @@
           "prompt": false,
           "visible": false
         },
-        "sort": 0
+        "sort": 0,
+        "damage": {
+          "parts": [
+            {
+              "number": 3,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
       }
     },
     "identifier": "-greatsword-of-life-stealing",

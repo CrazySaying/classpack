@@ -65,7 +65,12 @@
       "max": "3",
       "autoDestroy": false,
       "spent": 0,
-      "recovery": []
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
     },
     "damage": {
       "base": {

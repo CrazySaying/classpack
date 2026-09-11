@@ -74,7 +74,8 @@
     },
     "container": null,
     "properties": [
-      "mgc"
+      "mgc",
+      "stealthDisadvantage"
     ],
     "activities": {},
     "identifier": "-half-plate-armor-of-resistance",

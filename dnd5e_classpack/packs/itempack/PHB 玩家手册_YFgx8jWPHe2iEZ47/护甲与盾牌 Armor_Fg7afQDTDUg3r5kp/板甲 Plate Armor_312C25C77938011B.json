@@ -97,7 +97,9 @@
       "baseItem": "plate"
     },
     "container": null,
-    "properties": [],
+    "properties": [
+      "stealthDisadvantage"
+    ],
     "activities": {},
     "identifier": "-plate-armor",
     "attuned": false

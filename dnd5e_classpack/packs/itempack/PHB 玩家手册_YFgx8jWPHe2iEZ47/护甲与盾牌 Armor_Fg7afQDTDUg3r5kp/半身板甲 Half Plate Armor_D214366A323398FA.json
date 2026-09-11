@@ -97,7 +97,9 @@
       "baseItem": "halfplate"
     },
     "container": null,
-    "properties": [],
+    "properties": [
+      "stealthDisadvantage"
+    ],
     "activities": {},
     "identifier": "-half-plate-armor",
     "attuned": false

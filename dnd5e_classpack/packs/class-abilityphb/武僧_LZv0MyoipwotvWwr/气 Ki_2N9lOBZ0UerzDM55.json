@@ -20,7 +20,12 @@
     "uses": {
       "max": "@classes.monk.levels",
       "spent": 0,
-      "recovery": []
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
     },
     "requirements": "武僧等级 2",
     "activities": {},

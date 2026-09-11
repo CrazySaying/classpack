@@ -122,7 +122,8 @@
       "conditions": ""
     },
     "properties": [
-      "mgc"
+      "mgc",
+      "foc"
     ],
     "proficient": null,
     "unidentified": {

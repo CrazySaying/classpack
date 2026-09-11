@@ -101,7 +101,8 @@
     "container": null,
     "magicalBonus": null,
     "properties": [
-      "mgc"
+      "mgc",
+      "foc"
     ],
     "activities": {
       "M5AsMqYO4rH6fLPT": {

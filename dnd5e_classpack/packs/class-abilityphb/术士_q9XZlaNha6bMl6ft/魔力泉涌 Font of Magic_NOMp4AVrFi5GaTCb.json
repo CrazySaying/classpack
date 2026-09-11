@@ -18,7 +18,7 @@
       "rules": "2014"
     },
     "uses": {
-      "max": "",
+      "max": "@classes.sorcerer.levels",
       "spent": null,
       "recovery": [
         {

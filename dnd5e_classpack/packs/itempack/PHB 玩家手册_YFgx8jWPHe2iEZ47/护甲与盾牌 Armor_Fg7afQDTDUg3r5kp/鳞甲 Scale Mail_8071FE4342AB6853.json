@@ -73,7 +73,9 @@
       "baseItem": ""
     },
     "container": null,
-    "properties": [],
+    "properties": [
+      "stealthDisadvantage"
+    ],
     "activities": {},
     "identifier": "-scale-mail",
     "attuned": false

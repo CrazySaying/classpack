@@ -61,7 +61,8 @@
     },
     "container": null,
     "properties": [
-      "mgc"
+      "mgc",
+      "weightlessContents"
     ],
     "identifier": "yuan-bag-of-holding",
     "attuned": false

@@ -94,7 +94,9 @@
       "baseItem": "splint"
     },
     "container": null,
-    "properties": [],
+    "properties": [
+      "stealthDisadvantage"
+    ],
     "activities": {},
     "identifier": "-splint-armor",
     "attuned": false

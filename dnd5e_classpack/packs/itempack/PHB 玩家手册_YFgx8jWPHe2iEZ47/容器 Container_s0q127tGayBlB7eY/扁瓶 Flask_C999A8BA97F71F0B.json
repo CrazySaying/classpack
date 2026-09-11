@@ -60,7 +60,9 @@
       "description": ""
     },
     "container": null,
-    "properties": [],
+    "properties": [
+      "weightlessContents"
+    ],
     "identifier": "-flask",
     "attuned": false
   },
