@@ -5,7 +5,7 @@
   "img": "modules/dnd5e_classpack/Nicons/002612.png",
   "system": {
     "description": {
-      "value": "<p>14级起，在你的@UUID[Compendium.dnd5e_classpack.extra-ability.Item.DeqMj9ld6ZN2TKgB]{剑歌}激活期间，你将你的智力调整值（最低+1）加在你的近战武器伤害上。</p><p>*classpack注：自动化已并入「剑歌生效」效应——剑歌持续期间，每次近战武器攻击的伤害自动附加 max(1, 智力调整) 点力场伤害。</p>",
+      "value": "<p>14级起，在你的@UUID[Compendium.dnd5e_classpack.extra-ability.Item.DeqMj9ld6ZN2TKgB]{剑歌}激活期间，你可以将你的智力调整值（至少为+1）加到你的近战武器的伤害上。</p><p>*classpack注：自动化已并入「剑歌生效」效应——只有在剑歌生效期间，系统才会将智力调整值（至少为+1）自动加到每次近战武器攻击的伤害上；该加值不指定伤害类型，按原伤害处理。</p>",
       "chat": ""
     },
     "source": {
@@ -49,7 +49,7 @@
         {
           "key": "system.bonuses.mwak.damage",
           "mode": 2,
-          "value": "+max(1, @abilities.int.mod)[force]",
+          "value": "+max(1, @abilities.int.mod)",
           "priority": null
         }
       ],
