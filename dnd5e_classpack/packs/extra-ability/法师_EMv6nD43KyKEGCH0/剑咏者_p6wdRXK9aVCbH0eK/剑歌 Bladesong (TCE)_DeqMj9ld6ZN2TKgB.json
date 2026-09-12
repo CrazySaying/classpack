@@ -155,21 +155,9 @@
           "priority": null
         },
         {
-          "key": "flags.midi-qol.optional.胜利之歌.damage.mwak",
-          "mode": 5,
+          "key": "system.bonuses.mwak.damage",
+          "mode": 2,
           "value": "+max(1, @abilities.int.mod)[force]",
-          "priority": null
-        },
-        {
-          "key": "flags.midi-qol.optional.胜利之歌.label",
-          "mode": 5,
-          "value": "胜利之歌",
-          "priority": null
-        },
-        {
-          "key": "flags.midi-qol.optional.胜利之歌.count",
-          "mode": 5,
-          "value": "turn",
           "priority": null
         }
       ],
