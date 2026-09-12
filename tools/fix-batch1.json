@@ -1,0 +1,146 @@
+[
+  { "name": "Bladesong skills.acr",
+    "glob": "extra-ability/法师_EMv6nD43KyKEGCH0/剑咏者_p6wdRXK9aVCbH0eK/",
+    "find": "flags\\.midi-qol\\.advantage\\.skills\\.acr",
+    "replace": "flags.midi-qol.advantage.skill.acr", "expect": 1 },
+
+  { "name": "Fiendish Spirit magicResistance",
+    "glob": "summons/邪魔召唤术Summon Fiend (TCE)_2X2TLfg93T64W1Xr/",
+    "find": "\"key\": \"flags\\.midi-qol\\.advantage\\.ability\\.save\\.all\",\\s*\\r?\\n\\s*\"mode\": 2,\\s*\\r?\\n\\s*\"value\": \"\"",
+    "replace": "\"key\": \"flags.midi-qol.magicResistance.all\",\r\n          \"mode\": 2,\r\n          \"value\": \"1\"", "expect": 3 },
+
+  { "name": "Slaadi check.all",
+    "glob": "monster/MM14 怪物 需汉化_fMal9OEom9YXkKMD/异怪_AjUHdLOzzEfNN7Jd/",
+    "find": "flags\\.midi-qol\\.disadvantage\\.ability\\.check\\.all",
+    "replace": "flags.midi-qol.disadvantage.check.all", "expect": 6 },
+
+  { "name": "Eclipse save.all",
+    "glob": "extra-ability/牧师_8pfcG1qRw4Ec0oT2/月亮领域_P1ZcWSWwfGiocbre/",
+    "find": "flags\\.midi-qol\\.disadvantage\\.attack\\.save",
+    "replace": "flags.midi-qol.disadvantage.save.all", "expect": 1 },
+
+  { "name": "Stroke of Luck check.all",
+    "glob": "class-abilityphb/游荡者_Q5XSze3MoXgziMQq/",
+    "find": "flags\\.midi-qol\\.optional\\.幸运一击\\.check\\.fail\\.all",
+    "replace": "flags.midi-qol.optional.幸运一击.check.all", "expect": 1 },
+
+  { "name": "Trickery DS criticalDamage",
+    "glob": "class-abilityphb/牧师_r8VWrLGF90xOOzOA/诡术领域_WaCmhhAMFhZvj3Od/",
+    "find": "flags\\.midi-qol\\.optional\\.NAME\\.criticalDamage",
+    "replace": "flags.midi-qol.optional.神圣打击（诡术）.criticalDamage", "expect": 1 },
+
+  { "name": "Empowered Evocation sourceItem",
+    "glob": "class-abilityphb/法师_rqhKfWIjbYxdIi6T/塑能学派_E2Z5FZNCPpp2Es13/",
+    "find": "item\\.sourceClass === 'wizard'",
+    "replace": "item.sourceItem === 'class:wizard'", "expect": 1 },
+
+  { "name": "Potent Spellcasting force",
+    "glob": "class-abilityphb/牧师_r8VWrLGF90xOOzOA/",
+    "find": "item\\.level === 0 && item\\.sourceClass === 'cleric'&& item\\.itemType === \"spell\"",
+    "replace": "item.level === 0 && item.sourceItem === 'class:cleric'", "expect": 1 },
+
+  { "name": "Arcane Firearm force",
+    "glob": "extra-ability/奇械师_rVoqmwb7mLMxqe4c/魔炮师_zBGtsIBKuneeh8zh/",
+    "find": "item\\.itemType === \"spell\" && item\\.sourceClass === 'artificer'",
+    "replace": "item.sourceItem === 'class:artificer'", "expect": 1 },
+
+  { "name": "Supreme Healing force",
+    "glob": "class-abilityphb/牧师_r8VWrLGF90xOOzOA/生命领域_ekBsIjtT8dTU1Hdy/",
+    "find": "item\\.itenType === \"spell\"",
+    "replace": "item.level > 0", "expect": 1 },
+
+  { "name": "Disciple of Life activation",
+    "glob": "class-abilityphb/牧师_r8VWrLGF90xOOzOA/生命领域_ekBsIjtT8dTU1Hdy/",
+    "find": "item\\.level > 0 && item\\.itemType === \"spell\"",
+    "replace": "item.level > 0", "expect": 1 },
+
+  { "name": "Overchannel count",
+    "glob": "class-abilityphb/法师_rqhKfWIjbYxdIi6T/塑能学派_E2Z5FZNCPpp2Es13/",
+    "find": "ItemUses\\.超限导能",
+    "replace": "ItemUses.超限导能 Overchannel", "expect": 1 },
+
+  { "name": "Overchannel activation",
+    "glob": "class-abilityphb/法师_rqhKfWIjbYxdIi6T/塑能学派_E2Z5FZNCPpp2Es13/",
+    "find": "item\\.school === 'evo' && item\\.sourceClass === 'wizard' && workflow\\.castData\\.castLevel <= 5 && item\\.level > 0",
+    "replace": "item.school === 'evo' && item.sourceItem === 'class:wizard' && (workflow.castData?.castLevel ?? 9) <= 5 && item.level > 0", "expect": 1 },
+
+  { "name": "Indomitable count",
+    "glob": "class-abilityphb/战士_0Iyyl84LrEbKBK1I/",
+    "find": "ItemUses\\.buqu",
+    "replace": "ItemUses.不屈 Indomitable", "expect": 1 },
+
+  { "name": "Cleric CD counts",
+    "glob": "class-abilityphb/牧师_r8VWrLGF90xOOzOA/",
+    "find": "ItemUses\\.引导神力 Channel Divinity",
+    "replace": "ItemUses.引导神力 (牧师)", "expect": 2 },
+
+  { "name": "Tempest DS count",
+    "glob": "class-abilityphb/牧师_r8VWrLGF90xOOzOA/风暴领域_69kHgFUkU3qQZigm/",
+    "find": "ItemUses\\.神圣打击（风暴）\"",
+    "replace": "ItemUses.神圣打击（风暴）Divine Strike\"", "expect": 1 },
+
+  { "name": "Mind Sharpener count",
+    "glob": "extra-ability/奇械师_rVoqmwb7mLMxqe4c/奇械师注法_wzUdvMZs4LPV4ShM/",
+    "find": "itemUse\\.思维砥石",
+    "replace": "ItemUses.partialNameMatch.注法：思维砥石", "expect": 1 },
+
+  { "name": "Divine Strike scale prefix",
+    "glob": "class-abilityphb/牧师_r8VWrLGF90xOOzOA/",
+    "find": "\\+1@scale\\.cleric\\.divine-strike\\[",
+    "replace": "+@scale.cleric.divine-strike[", "expect": 6 },
+
+  { "name": "Trickery DS poison type",
+    "glob": "class-abilityphb/牧师_r8VWrLGF90xOOzOA/诡术领域_WaCmhhAMFhZvj3Od/",
+    "find": "\\+@scale\\.cleric\\.divine-strike\\[poisoned\\]",
+    "replace": "+@scale.cleric.divine-strike[poison]", "expect": 2 },
+
+  { "name": "OverTime spelldc",
+    "glob": "",
+    "find": "saveDC=@attributes\\.spelldc",
+    "replace": "saveDC=@attributes.spell.dc", "expect": 4 },
+
+  { "name": "Natures Wrath saveAbility",
+    "glob": "class-abilityphb/圣武士_w0ZwAIAMmfHw8zKQ/古贤之誓_vwDvCpIHYZNhOxTd/",
+    "find": "saveAbility=str,dex",
+    "replace": "saveAbility=str|dex", "expect": 1 },
+
+  { "name": "Wrathful Smite damageType",
+    "glob": "spell/PHB 玩家手册_hSoScUNgYYqpKuFk/1环_UpyidlPmP73pCiWN/",
+    "find": "damageType=fire, ",
+    "replace": "", "expect": 1 },
+
+  { "name": "OverTime saveRemove=true",
+    "glob": "",
+    "find": "saveRemove=true",
+    "replace": "saveCount=1", "expect": 5 },
+
+  { "name": "Filth Fever attack.str",
+    "glob": "spell/PHB 玩家手册_hSoScUNgYYqpKuFk/5环_dP07MxenLzAZwePt/",
+    "find": "flags\\.midi-qol\\.disadvantage\\.attack\\.mwak",
+    "replace": "flags.midi-qol.disadvantage.attack.str", "expect": 1 },
+
+  { "name": "Seizure disadvantage dex",
+    "glob": "spell/PHB 玩家手册_hSoScUNgYYqpKuFk/5环_dP07MxenLzAZwePt/",
+    "find": "flags\\.midi-qol\\.advantage\\.attack\\.dex",
+    "replace": "flags.midi-qol.disadvantage.attack.dex", "expect": 1 },
+
+  { "name": "Mindfire save.int value",
+    "glob": "spell/PHB 玩家手册_hSoScUNgYYqpKuFk/5环_dP07MxenLzAZwePt/",
+    "find": "\"key\": \"flags\\.midi-qol\\.disadvantage\\.save\\.int\",\\s*\\r?\\n\\s*\"mode\": 2,\\s*\\r?\\n\\s*\"value\": \"\"",
+    "replace": "\"key\": \"flags.midi-qol.disadvantage.save.int\",\r\n          \"mode\": 2,\r\n          \"value\": \"1\"", "expect": 1 },
+
+  { "name": "Slimy Doom save.con value",
+    "glob": "spell/PHB 玩家手册_hSoScUNgYYqpKuFk/5环_dP07MxenLzAZwePt/",
+    "find": "\"key\": \"flags\\.midi-qol\\.disadvantage\\.save\\.con\",\\s*\\r?\\n\\s*\"mode\": 2,\\s*\\r?\\n\\s*\"value\": \"\"",
+    "replace": "\"key\": \"flags.midi-qol.disadvantage.save.con\",\r\n          \"mode\": 2,\r\n          \"value\": \"1\"", "expect": 1 },
+
+  { "name": "Spirit Shroud formula",
+    "glob": "spell/TCE 塔莎的万事坩埚_eKWjH0NyoSjvzeog/3环_AxRx3cjmq2V2NJQQ/",
+    "find": "\\(\\(@scaling\\+1\\)/2\\)d8",
+    "replace": "(@scaling+1)d8", "expect": 12 },
+
+  { "name": "Spirit Shroud desc",
+    "glob": "spell/TCE 塔莎的万事坩埚_eKWjH0NyoSjvzeog/3环_AxRx3cjmq2V2NJQQ/",
+    "find": "每比三环高 2 环，其伤害就增加 1d8",
+    "replace": "每比三环高 1 环，其伤害就增加 1d8", "expect": 1 }
+]
