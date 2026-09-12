@@ -155,9 +155,9 @@
           "priority": null
         },
         {
-          "key": "system.bonuses.mwak.damage",
-          "mode": 2,
-          "value": "+max(1, @abilities.int.mod)[force]",
+          "key": "flags.world.bladesongActive",
+          "mode": 5,
+          "value": "true",
           "priority": null
         }
       ],

@@ -35,7 +35,43 @@
     },
     "properties": []
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "dnd5efixvictory01",
+      "name": "胜利之歌生效",
+      "img": "modules/dnd5e_classpack/Nicons/002612.png",
+      "type": "base",
+      "system": {},
+      "description": "",
+      "disabled": false,
+      "transfer": true,
+      "changes": [
+        {
+          "key": "system.bonuses.mwak.damage",
+          "mode": 2,
+          "value": "+max(1, @abilities.int.mod)[force]",
+          "priority": null
+        }
+      ],
+      "flags": {
+        "dae": {
+          "disableCondition": "!flags.world || !flags.world.bladesongActive"
+        }
+      },
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0
+    }
+  ],
   "folder": "p6wdRXK9aVCbH0eK",
   "sort": 47400000,
   "flags": {
