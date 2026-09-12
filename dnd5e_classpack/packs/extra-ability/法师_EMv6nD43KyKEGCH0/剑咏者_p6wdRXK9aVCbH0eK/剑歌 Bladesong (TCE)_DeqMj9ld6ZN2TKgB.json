@@ -144,7 +144,7 @@
         },
         {
           "key": "flags.midi-qol.advantage.skill.acr",
-          "mode": 0,
+          "mode": 5,
           "value": "1",
           "priority": null
         },
@@ -156,19 +156,19 @@
         },
         {
           "key": "flags.midi-qol.optional.胜利之歌.damage.mwak",
-          "mode": 0,
+          "mode": 5,
           "value": "+max(1, @abilities.int.mod)[force]",
           "priority": null
         },
         {
           "key": "flags.midi-qol.optional.胜利之歌.label",
-          "mode": 0,
+          "mode": 5,
           "value": "胜利之歌",
           "priority": null
         },
         {
           "key": "flags.midi-qol.optional.胜利之歌.count",
-          "mode": 0,
+          "mode": 5,
           "value": "turn",
           "priority": null
         }
