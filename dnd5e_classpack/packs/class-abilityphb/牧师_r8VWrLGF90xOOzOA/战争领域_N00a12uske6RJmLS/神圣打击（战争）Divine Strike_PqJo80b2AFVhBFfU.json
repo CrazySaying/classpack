@@ -54,13 +54,13 @@
         {
           "key": "flags.midi-qol.optional.神圣打击（战争）.damage.mwak",
           "mode": 2,
-          "value": "+1@scale.cleric.divine-strike",
+          "value": "+@scale.cleric.divine-strike",
           "priority": 20
         },
         {
           "key": "flags.midi-qol.optional.神圣打击（战争）.damage.rwak",
           "mode": 2,
-          "value": "+1@scale.cleric.divine-strike",
+          "value": "+@scale.cleric.divine-strike",
           "priority": 20
         },
         {

@@ -47,7 +47,7 @@
         {
           "key": "flags.midi-qol.optional.强力施法PotentSpellcasting.force",
           "mode": 5,
-          "value": "item.level === 0 && item.sourceClass === 'cleric'&& item.itemType === \"spell\"",
+          "value": "item.level === 0 && item.sourceItem === 'class:cleric'",
           "priority": 20
         },
         {

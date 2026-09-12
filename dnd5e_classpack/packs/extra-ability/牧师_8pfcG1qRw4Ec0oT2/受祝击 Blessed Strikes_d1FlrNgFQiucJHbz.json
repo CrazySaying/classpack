@@ -146,23 +146,11 @@
         {
           "key": "flags.midi-qol.optional.受祝击A.activation",
           "mode": 2,
-          "value": "item.level === 0 && item.itemType === \"spell\"",
+          "value": "item.level === 0",
           "priority": 20
         },
         {
           "key": "flags.midi-qol.optional.受祝击A.damage.all",
-          "mode": 2,
-          "value": "+1d8[radiant]",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.optional.受祝击B.activation",
-          "mode": 2,
-          "value": "item.itemType === \"weapon\"",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.optional.受祝击B.damage.mwak",
           "mode": 2,
           "value": "+1d8[radiant]",
           "priority": 20

@@ -54,19 +54,19 @@
         {
           "key": "flags.midi-qol.optional.神圣打击（风暴）.damage.mwak",
           "mode": 2,
-          "value": "+1@scale.cleric.divine-strike[thunder]",
+          "value": "+@scale.cleric.divine-strike[thunder]",
           "priority": 20
         },
         {
           "key": "flags.midi-qol.optional.神圣打击（风暴）.damage.rwak",
           "mode": 2,
-          "value": "+1@scale.cleric.divine-strike[thunder]",
+          "value": "+@scale.cleric.divine-strike[thunder]",
           "priority": 20
         },
         {
           "key": "flags.midi-qol.optional.神圣打击（风暴）.count",
           "mode": 2,
-          "value": "ItemUses.神圣打击（风暴）",
+          "value": "ItemUses.神圣打击（风暴）Divine Strike",
           "priority": 20
         },
         {

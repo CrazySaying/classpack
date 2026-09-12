@@ -47,7 +47,7 @@
         {
           "key": "flags.midi-qol.optional.极效治疗.force",
           "mode": 2,
-          "value": "item.itenType === \"spell\"",
+          "value": "item.level > 0",
           "priority": 20
         },
         {

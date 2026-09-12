@@ -279,7 +279,7 @@
       "system": {},
       "changes": [
         {
-          "key": "flags.midi-qol.disadvantage.attack.save",
+          "key": "flags.midi-qol.disadvantage.save.all",
           "mode": 0,
           "value": "1",
           "priority": 20

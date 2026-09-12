@@ -54,13 +54,13 @@
         {
           "key": "flags.midi-qol.optional.神圣打击.damage.mwak",
           "mode": 2,
-          "value": "+1@scale.cleric.divine-strike[radiant]",
+          "value": "+@scale.cleric.divine-strike[radiant]",
           "priority": 20
         },
         {
           "key": "flags.midi-qol.optional.神圣打击.damage.rwak",
           "mode": 2,
-          "value": "+1@scale.cleric.divine-strike[radiant]",
+          "value": "+@scale.cleric.divine-strike[radiant]",
           "priority": 20
         },
         {

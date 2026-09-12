@@ -5232,7 +5232,7 @@
             {
               "key": "flags.midi-qol.OverTime",
               "mode": 2,
-              "value": "turn=start, saveAbility=con, saveDC=@attributes.spelldc, saveMagic=true, saveDamage=halfdamage, rollType=save, saveMagic=true, damageBeforeSave=false, damageRoll=[@flags.dnd5e.spellLevel]d8, damageType=poison",
+              "value": "turn=start, saveAbility=con, saveDC=@attributes.spell.dc, saveMagic=true, saveDamage=halfdamage, rollType=save, saveMagic=true, damageBeforeSave=false, damageRoll=[@flags.dnd5e.spellLevel]d8, damageType=poison",
               "priority": 20
             }
           ],
@@ -6056,7 +6056,7 @@
               "priority": 0
             },
             {
-              "key": "flags.midi-qol.disadvantage.ability.check.all",
+              "key": "flags.midi-qol.disadvantage.check.all",
               "mode": 0,
               "value": "1",
               "priority": 0

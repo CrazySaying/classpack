@@ -138,13 +138,13 @@
         {
           "key": "flags.midi-qol.optional.神圣打击（诡术）.damage.mwak",
           "mode": 2,
-          "value": "+1@scale.cleric.divine-strike[poisoned]",
+          "value": "+@scale.cleric.divine-strike[poison]",
           "priority": 20
         },
         {
           "key": "flags.midi-qol.optional.神圣打击（诡术）.damage.rwak",
           "mode": 2,
-          "value": "+1@scale.cleric.divine-strike[poisoned]",
+          "value": "+@scale.cleric.divine-strike[poison]",
           "priority": 20
         },
         {
@@ -154,7 +154,7 @@
           "priority": 20
         },
         {
-          "key": "flags.midi-qol.optional.NAME.criticalDamage",
+          "key": "flags.midi-qol.optional.神圣打击（诡术）.criticalDamage",
           "mode": 2,
           "value": "true",
           "priority": 20

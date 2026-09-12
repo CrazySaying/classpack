@@ -47,7 +47,7 @@
         {
           "key": "flags.midi-qol.optional.强效塑能.force",
           "mode": 5,
-          "value": "item.school === 'evo' && item.sourceClass === 'wizard'",
+          "value": "item.school === 'evo' && item.sourceItem === 'class:wizard'",
           "priority": 20
         },
         {

@@ -74,12 +74,6 @@
       "system": {},
       "changes": [
         {
-          "key": "flags.midi-qol.long.rsak",
-          "mode": 2,
-          "value": "+item.long.value",
-          "priority": 20
-        },
-        {
           "key": "flags.midi-qol.range.rsak",
           "mode": 2,
           "value": "+item.range.value",

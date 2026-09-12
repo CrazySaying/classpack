@@ -48,27 +48,33 @@
       "system": {},
       "changes": [
         {
-          "key": "flags.midi-qol.optional.NAME.attack.fail.all",
+          "key": "flags.midi-qol.optional.命运宠儿.attack.fail.all",
           "mode": 5,
           "value": "reroll-kh",
           "priority": 20
         },
         {
-          "key": "flags.midi-qol.optional.NAME.save.fail.all",
+          "key": "flags.midi-qol.optional.命运宠儿.save.fail.all",
           "mode": 5,
           "value": "reroll-kh",
           "priority": 20
         },
         {
-          "key": "flags.midi-qol.optional.NAME.check.fail.all",
+          "key": "flags.midi-qol.optional.命运宠儿.check.all",
           "mode": 5,
           "value": "reroll-kh",
           "priority": 20
         },
         {
-          "key": "flags.midi-qol.optional.NAME.label",
+          "key": "flags.midi-qol.optional.命运宠儿.label",
           "mode": 2,
           "value": "命运宠儿",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.命运宠儿.count",
+          "mode": 2,
+          "value": "1",
           "priority": 20
         }
       ],

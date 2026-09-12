@@ -260,7 +260,7 @@
           "priority": 20
         },
         {
-          "key": "flags.midi-qol.disadvantage.attack.mwak",
+          "key": "flags.midi-qol.disadvantage.attack.str",
           "value": "+1",
           "mode": 2,
           "priority": 20
@@ -443,7 +443,7 @@
         },
         {
           "key": "flags.midi-qol.disadvantage.save.int",
-          "value": "",
+          "value": "1",
           "mode": 2,
           "priority": 20
         }
@@ -538,7 +538,7 @@
           "priority": 20
         },
         {
-          "key": "flags.midi-qol.advantage.attack.dex",
+          "key": "flags.midi-qol.disadvantage.attack.dex",
           "value": "+1",
           "mode": 2,
           "priority": 20
@@ -627,7 +627,7 @@
         },
         {
           "key": "flags.midi-qol.disadvantage.save.con",
-          "value": "",
+          "value": "1",
           "mode": 2,
           "priority": 20
         }

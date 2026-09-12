@@ -1,3 +1,49 @@
+# v5.0.6 — midi-qol 自动化修复（错误 flag 调用 + 弃用键迁移）
+
+- 依据 midi-qol 13.0.61 源码与 dnd5e 5.3.3 数据模型，修正一批不会被运行时求值或语义错误的 `flags.midi-qol.*` 调用：
+
+**无效 flag 键名修正**
+
+- 剑咏者·剑歌（TCE）：杂技优势 `advantage.skills.acr` → `advantage.skill.acr`（midi 只读单数 `skill`）。
+- 邪魔召唤术·邪魔灵魄（恶魔/魔鬼/尤格罗斯魔）：`advantage.ability.save.all`（空值，永不生效）→ `magicResistance.all = 1`，正确对应「对抗法术和魔法效应的豁免具有优势」。
+- 史拉蟾六体（MM'14 惊惧状态效果）：无效的 `disadvantage.ability.check.all` → `disadvantage.check.all`（midi 检定优势/劣势不读取该键；默认配置下同时覆盖技能检定）。
+- 月亮领域（第三方）·月蚀恶兆：无效的 `disadvantage.attack.save` → `disadvantage.save.all`，对应「区域内生物豁免具有劣势」。
+- 游荡者 20 级·幸运一击：`check.fail.all`（检定无失败分支，永不触发）→ `check.all`。
+- 幸运专长：删除空的无效 `optional.NAME.check.fail.all`，改为 `optional.幸运.check.all = reroll-kh`；次数修正 `itemUses.幸运`（大小写错误，永不限制）→ `ItemUses.幸运 Lucky`。
+- 命运宠儿（EGW）：字面 `NAME` 标志统一改名为 `命运宠儿`，`check.fail.all` → `check.all`，并补充 `count=1`（使用后法术结束）。
+- 诡术领域·神圣打击：`optional.NAME.criticalDamage` 与实际标志名（`神圣打击（诡术）`）不匹配 → 修正；毒伤害类型 `[poisoned]`（状态非伤害类型）→ `[poison]`。
+
+**条件表达式修正（dnd5e 5.x 条件数据中不存在这些字段）**
+
+- 强效塑能 / 强力施法 / 奥法火器 / 超限导能：`item.sourceClass`（5.x 已移除）→ `item.sourceItem === 'class:<职业>'`；`item.itemType` / `item.itenType`（拼错且不存在）→ 以 `item.level`、`item.school` 等真实字段表达；超限导能的 `workflow.castData.castLevel` 加空值保护。
+- 极效治疗：force 条件修正为 `item.level > 0`（1 环及以上治疗法术取最大值）。
+- 生命门徒 / 受祝击：条件中移除无效的 `item.itemType === "spell"` / `"weapon"` 测试；受祝击同时去除重复的 `damage.mwak` 条目。
+- 法术盗贼：活动条件 `item.itemType === "spell"` → `item.school !== undefined`。
+
+**次数（count）引用修正（引用不存在的物品名导致永远不消耗/不受限）**
+
+- 不屈：`ItemUses.buqu` → `ItemUses.不屈 Indomitable`。
+- 超限导能：`ItemUses.超限导能` → `ItemUses.超限导能 Overchannel`。
+- 引导打击 / 毁灭狂怒：`ItemUses.引导神力 Channel Divinity` → `ItemUses.引导神力 (牧师)`。
+- 神圣打击（风暴）：补全被截断的物品名。
+- 思维砥石：无效前缀 `itemUse.` → `ItemUses.partialNameMatch.注法：思维砥石`（匹配注灵重命名后的物品）。
+
+**数值/公式修正**
+
+- 神圣打击（本体/战争/诡术/风暴）：`+1@scale.cleric.divine-strike` 与「骰子型」缩放值（`1d8`/`2d8`）拼接成 `+11d8` → `+@scale.cleric.divine-strike`。
+- 魂灵环绕（TCE）：升环公式 `((@scaling+1)/2)d8` → `(@scaling+1)d8`，并同步修正描述文本（每比三环高 1 环 +1d8）。
+- 疫病术：脑热症/恶心症的空 `value`（永不生效）→ `1`；腐热症 `attack.mwak` → `attack.str`（基于力量的攻击）；癫痫症误写的优势 → `disadvantage.attack.dex`。
+- 花言巧语：`optional.check.cha = replace 15`（把检定总值整个替换为 15，丢失调整值）→ 被动 `min.ability.check.cha = 15`（d20 最小 15，保留加值）。
+- 法术射手：删除 `long.rsak`（dnd5e 4.x+ 法术不再有独立远程长距字段，`item.long` 恒为空）；`range.rsak` 保留实现法术距离加倍。
+
+**OverTime 规范迁移**
+
+- `saveDC=@attributes.spelldc`（dnd5e 4.x 起该路径不存在，DC 恒为 0）→ `@attributes.spell.dc`：史拉亡蟾×2、灵体卫士(midi)、焚云术重复效应。
+- 自然之怒：`saveAbility=str,dex`（多属性应以 `|` 分隔，逗号会被当作单一键）→ `saveAbility=str|dex`。
+- 激愤斩：移除误加的 `damageType=fire`（该法术无持续伤害）。
+- 弃用键 `saveRemove=true` → `saveCount=1`（上古斗士、自然之怒、飞蝇斗篷、颤栗乐笙、迷宫术、艾伐黑触手宏）。
+- 宏与描述中的旧 DC 路径修正：驱散异域/威胁灵光/疫病术/虹光喷射(indigo) 宏、彼岸故事描述文本、灵体卫士(midi) 宏参数。
+
 # v5.0.5 — chris-premades 预匹配（实验性）
 
 发布日期：2026-08-14

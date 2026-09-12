@@ -266,7 +266,7 @@
         {
           "key": "flags.midi-qol.optional.思维砥石MindSharpener.count",
           "mode": 2,
-          "value": "itemUse.思维砥石",
+          "value": "ItemUses.partialNameMatch.注法：思维砥石",
           "priority": 20
         },
         {

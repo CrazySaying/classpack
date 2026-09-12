@@ -54,24 +54,18 @@
         {
           "key": "flags.midi-qol.optional.超限导能.count",
           "mode": 5,
-          "value": "ItemUses.超限导能",
+          "value": "ItemUses.超限导能 Overchannel",
           "priority": 20
         },
         {
           "key": "flags.midi-qol.optional.超限导能.activation",
           "mode": 5,
-          "value": "item.school === 'evo' && item.sourceClass === 'wizard' && workflow.castData.castLevel <= 5 && item.level > 0",
+          "value": "item.school === 'evo' && item.sourceItem === 'class:wizard' && (workflow.castData?.castLevel ?? 9) <= 5 && item.level > 0",
           "priority": 20
         },
         {
           "key": "flags.midi-qol.optional.超限导能.damage.all",
           "mode": 5,
-          "value": "reroll-max",
-          "priority": 20
-        },
-        {
-          "key": "flags.midi-qol.optional.超限导能.damage.save",
-          "mode": 2,
           "value": "reroll-max",
           "priority": 20
         }

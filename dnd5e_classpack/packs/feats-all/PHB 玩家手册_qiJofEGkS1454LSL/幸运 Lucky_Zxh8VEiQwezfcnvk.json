@@ -108,13 +108,13 @@
         {
           "key": "flags.midi-qol.optional.幸运.count",
           "mode": 2,
-          "value": "itemUses.幸运",
+          "value": "ItemUses.幸运 Lucky",
           "priority": 20
         },
         {
-          "key": "flags.midi-qol.optional.NAME.check.fail.all",
+          "key": "flags.midi-qol.optional.幸运.check.all",
           "mode": 2,
-          "value": "",
+          "value": "reroll-kh",
           "priority": 20
         }
       ],

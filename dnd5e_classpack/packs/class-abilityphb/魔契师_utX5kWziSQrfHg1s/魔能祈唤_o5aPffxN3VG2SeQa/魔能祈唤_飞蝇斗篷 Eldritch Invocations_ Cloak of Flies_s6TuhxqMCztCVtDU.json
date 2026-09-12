@@ -247,7 +247,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 2,
-          "value": "turn=start,allowIncapacitated=true,saveDamage=nodamage,saveRemove=true,saveMagic=true,damageRoll=max(@abilities.cha.mod,0),damageType=poison,rollMode=publicroll,",
+          "value": "turn=start,allowIncapacitated=true,saveDamage=nodamage,saveCount=1,saveMagic=true,damageRoll=max(@abilities.cha.mod,0),damageType=poison,rollMode=publicroll,",
           "priority": 20
         }
       ],

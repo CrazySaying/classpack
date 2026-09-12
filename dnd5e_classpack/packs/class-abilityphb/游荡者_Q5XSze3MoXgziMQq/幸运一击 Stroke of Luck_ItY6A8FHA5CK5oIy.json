@@ -135,7 +135,7 @@
           "priority": 20
         },
         {
-          "key": "flags.midi-qol.optional.幸运一击.check.fail.all",
+          "key": "flags.midi-qol.optional.幸运一击.check.all",
           "mode": 2,
           "value": "reroll-max",
           "priority": 20

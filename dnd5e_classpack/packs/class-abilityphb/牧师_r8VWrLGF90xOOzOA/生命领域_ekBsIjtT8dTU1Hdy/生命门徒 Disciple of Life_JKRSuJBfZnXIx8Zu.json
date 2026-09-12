@@ -49,7 +49,7 @@
         {
           "key": "flags.midi-qol.optional.生命门徒.activation",
           "mode": 2,
-          "value": "item.level > 0 && item.itemType === \"spell\"",
+          "value": "item.level > 0",
           "priority": 20
         },
         {

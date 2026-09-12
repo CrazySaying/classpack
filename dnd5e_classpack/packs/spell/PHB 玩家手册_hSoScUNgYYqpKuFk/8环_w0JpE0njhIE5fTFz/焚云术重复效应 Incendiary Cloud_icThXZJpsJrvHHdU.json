@@ -63,7 +63,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 2,
-          "value": "turn=end,\ndamageRoll=10d8,\ndamageType=fire,\nsaveRemove=false,\nsaveDC=@attributes.spelldc,\nsaveAbility=dex,\nsaveDamage=halfdamage,\nkillAnim=true",
+          "value": "turn=end,\ndamageRoll=10d8,\ndamageType=fire,\nsaveRemove=false,\nsaveDC=@attributes.spell.dc,\nsaveAbility=dex,\nsaveDamage=halfdamage,\nkillAnim=true",
           "priority": 20
         }
       ],

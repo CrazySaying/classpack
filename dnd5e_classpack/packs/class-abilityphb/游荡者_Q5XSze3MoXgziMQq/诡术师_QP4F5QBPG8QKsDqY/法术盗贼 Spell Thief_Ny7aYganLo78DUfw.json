@@ -108,7 +108,7 @@
         "midiProperties": {
           "triggeredActivityId": "none"
         },
-        "useConditionText": "item.itemType === \"spell\""
+        "useConditionText": "item.school !== undefined"
       },
       "mE6AneA2CzvsPC2B": {
         "type": "utility",

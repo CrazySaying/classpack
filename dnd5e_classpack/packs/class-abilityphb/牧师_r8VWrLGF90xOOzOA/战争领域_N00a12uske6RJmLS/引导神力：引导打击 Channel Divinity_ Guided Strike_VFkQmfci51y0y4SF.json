@@ -55,7 +55,7 @@
         {
           "key": "flags.midi-qol.optional.引导神力-引导打击.count",
           "mode": 2,
-          "value": "ItemUses.引导神力 Channel Divinity",
+          "value": "ItemUses.引导神力 (牧师)",
           "priority": 20
         }
       ],
