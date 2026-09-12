@@ -55,7 +55,7 @@
       ],
       "flags": {
         "dae": {
-          "disableCondition": "!flags.world || !flags.world.bladesongActive"
+          "disableCondition": "!flags.dnd5e_classpack || !flags.dnd5e_classpack.bladesongActive"
         }
       },
       "duration": {

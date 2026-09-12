@@ -155,7 +155,7 @@
           "priority": null
         },
         {
-          "key": "flags.world.bladesongActive",
+          "key": "flags.dnd5e_classpack.bladesongActive",
           "mode": 5,
           "value": "true",
           "priority": null
